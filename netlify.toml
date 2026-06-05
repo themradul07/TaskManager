@@ -1,0 +1,15 @@
+[build]
+  # The base directory where the frontend code lives
+  base = "frontend"
+  
+  # The publish directory where the build output will be stored
+  publish = "dist"
+  
+  # The build command to run inside the base directory
+  command = "npm run build"
+
+# Redirect rule for client-side routing (React Router)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
